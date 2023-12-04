@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BON VOYAGE</title>
+    <link href="CSS/style.css" rel="stylesheet">
+    <link href="IMG/fav.jpEg" rel="icon"  sizes="20x20" type="image/x-icon">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!---------Google fonts------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <img class="bgimg" src="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="bg image">
+<nav class="navbar navbar-expand-lg bg-light navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand" id="brand">B<span>O</span>N VO<span>Y</span>AGE</a>
+        </div>
+    <div class="collapse navbar-collapse" id="navi">
+    <ul class="nav navbar-nav navbar-right">
+        <li><a class="nav-link" href="">HOME</li></a>
+        <li><a class="nav-link" href="#book">BOOK NOW</li></a>
+        <li><a class="nav-link" href="#desti">DESTINATIONS</li></a>
+        <li><a class="nav-link" href="#package">SERVICES</li></a>
+        <li><a class="nav-link" href="#footer">ABOUT US</li></a>
+    </ul>
+    </div>
+    </div>
+</nav>
+
+<!-- <script>
+    const navE1 = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if(window.scrollY >= 250){
+            navE1.classList.add('navbar-scrolled');
+        }else if(window.scrollY < 250){
+            navE1.classList.remove('navbar-scrolled');
+        }
+    })
+</script> -->
+
+<div class="home">
+    <p class="old">welcome to Bon Voyage !</p>
+    <p class="cont">A journey of a thousand miles begins with a single step.</p>
+    <p class="new">TRAVEL AROUND <span class="country"></span></p>
+</div>
+<section class="book" id="book">
+    <div class="row">
+        <p>BOOK YOUR VOYAGE NOW !</p>
+        <div class="col-md-4 py-3 pymd-0">
+            <div class="card">
+                <img class="bookimg" src="https://images.unsplash.com/photo-1504150558240-0b4fd8946624?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+
+        <div class="col-md-6 py-3 py-md-0">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="lname">Contact No</label>
+                <input type="text" id="lname" name="Contact No." placeholder="Enter your contact no.">
+
+                <label for="lname">Start Date</label><br>
+                <input type="date" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+                
+                <label for="lname">End Date</label><br>
+                <input type="date" required>
+               
+<br><br>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">INDIA</option>
+                  <option value="canada">SWITZERLAND</option>
+                  <option value="usa">TURKEY</option>
+                  <option value="australia">NEW ZEALAND</option>
+                  <option value="canada">ITALY</option>
+                  <option value="usa">FRANCE</option>
+                </select><br><br>
+              
+                <input type="submit" value="Book Now">
+              </form>
+            
+        </div>
+</section>
+
+<div class="dest" id="desti">
+    <div class="slide-container active">
+        <div class="slide">
+            <div class="content">
+                <h3>INDIA</h3>
+                <p>
+                    The country is known for its rich cultural heritage, diverse geography, and historical landmarks, which attract tourists from all over the world. Additionally, India is home to several UNESCO World Heritage sites, exotic wildlife, and adventure tourism opportunities.</p>
+            </div>
+            <img class="dimg" src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <h3>NEW ZEALAND</h3>
+                <p>The main attraction of this place is its surreal natural beauty. Travellers and adventure lovers can gather amazing experiences from New Zealand. Apart from picturesque natural phenomena, New Zealand is also famous for its authentic Maori culture.</p>
+            </div>
+            <img class="dimg" src="https://images.unsplash.com/photo-1547314283-befb6cc5cf29?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <h3>TURKEY</h3>
+                <p>
+                    Tourism in Turkey is focused largely on a variety of historical sites, and on seaside resorts along its Aegean and Mediterranean Sea coasts. Turkey has also become a popular destination for culture, spa, and health care. Since 2021, Turkey is the fourth most visited country in the world.</p>
+            </div>
+            <img class="dimg" src="https://plus.unsplash.com/premium_photo-1661955588369-b0d28de38b45?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <h3>ITALY</h3>
+                <p>It is possibly one of the most sought-after destinations in the world when it comes to both quick holidays and long, slow vacations. It's also known for its many facets: the rich culture, the millenary history, the delicious cuisine and stunning and widely varied natural scenery.</p>
+            </div>
+            <img class="dimg" src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <h3>SWITZERLAND</h3>
+                <p>
+                    Tourism in Switzerland - Wikipedia
+                    Tourists are drawn to Switzerland's diverse landscape as well as the available activities, which take advantage of the Alpine climate and landscapes, in particular skiing and mountaineering. Switzerland is notable for its landscapes and tourism facilities (Matterhorn from the Gornergrat Railway).</p>
+            </div>
+            <img class="dimg" src="https://images.unsplash.com/photo-1594069758873-e79e9075eb7d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <h3>FRANCE</h3>
+                <p>France's scenery is as diverse as it is beautiful, with the glittering coastlines of the French Riviera, the patchwork fields of the Loire Valley, the snow-capped Alps and centuries old harbor towns of Normandy. This, of course, is hugely appealing for lovers of the great outdoors.
+                </p>
+            </div>
+            <img class="dimg" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+    </div>
+
+
+    <div id="next" onclick="next()"> > </div>
+    <div id="prev" onclick="prev()"> < </div>
+
+</div>
+
+<!-----------services----------->
+<section class="services" id="package">
+    <div class="container">
+        <div class="main-text">
+            <h1>SERVICES</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 pymd-0">
+            <div class="card">
+                <img class="cardimg" src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="card-body">
+                    <h3>Hotels</h3>
+                    <p>We always develop your hotel services to bring great experiences to the customers and maintain a good relationship with TAs.
+
+                        The better the hotel services you provide, the better your chances of customer’s returning to your property. Moreover, they will recommend your hotel to their family.
+                        </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 py-3 pymd-0">
+            <div class="card">
+                <img class="cardimg" src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="card-body">
+                    <h3>Food & Drinks</h3>
+                    <p>We stand apart as a travel company, distinguished by our commitment to offering truly exceptional and authentic experiences.we ensure that our clients immerse themselves in the rich cultures and distinctive flavors of every destinations like never before.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 py-3 pymd-0">
+            <div class="card">
+                <img class="cardimg" src="https://images.unsplash.com/photo-1623316836158-6139f612b539?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="card-body">
+                    <h3>Candle light dinner</h3>
+                    <p>Candlelight is a fantastic accessory for a dinner date; it provides just enough light for both parties to focus on the food and each other while dimming focus to any surrounding distractions. Candles also help create a sense of warmth in us, despite not giving out that much heat.</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 pymd-0">
+                <div class="card">
+                    <img class="cardimg" src="https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="card-body">
+                        <h3>Hiking</h3>
+                        <p>New Zealand is an adventurer's paradise, offering numerous outdoor activities such as hiking, mountain biking, skiing, snowboarding, bungee jumping, white-water rafting, and skydiving. The country's well-maintained national parks provide plenty of opportunities for adventure.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4 py-3 pymd-0">
+                <div class="card">
+                    <img class="cardimg" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="card-body">
+                        <h3>Travel</h3>
+                        <p>A travel agent's role is to help people plan, choose and arrange their holiday. They will usually work to a budget set out by whoever is planning the holiday. They also offer advice and opinions on where to go and local tourist attractions, events and customs.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4 py-3 pymd-0">
+                <div class="card">
+                    <img class="cardimg" src="https://images.unsplash.com/photo-1682685797795-5640f369a70a?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="card-body">
+                        <h3>Tourist Guide</h3>
+                        <p>BON VOYAGE will not just provide information about the places but will take you to the unexplored parts with a rare and unique never before experience. So, if you have a quest for adventure and to visit lesser-known destinations, check out our website and book your trips.</p>
+                    </div>
+                </div>
+            </div>
+    
+    
+            </div>
+    </div>
+</section>
+<script>
+    let slides=document.querySelectorAll('.slide-container');
+    let index=0;
+
+    function next(){
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+    }
+    function prev(){
+        slides[index].classList.remove('active');
+        index = (index - 1 + slides.length) % slides.length;
+        slides[index].classList.add('active');
+    }
+</script>
+    
+<footer id="footer">
+    <div class="social-links">
+        <a href="https://github.com/SivaGanesh74">Github</a> <a href="https://www.linkedin.com/in/p-sivaganesh-859389202/">Linkedn</a> <a href="https://twitter.com/">Twitter</a>
+        
+    </div>
+    <div class="copyright">
+        <p>&copy;Copyright BonVoyage. All Rights reserved</p>
+    </div>
+</footer>
+    
+</body>
+
+</html>

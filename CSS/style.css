@@ -1,0 +1,284 @@
+.bgimg{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(1);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2));
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1; 
+}
+/*---------nav---------*/
+#brand{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    color:black;
+    margin-bottom: 5px;
+    text-shadow: 2px 5px 10px black;
+}
+#brand span{
+    color:rgb(88, 55, 119);
+}
+.nav-link{
+    transition: all 0.2s;
+    position: relative;
+}
+.nav-link:hover::after{
+    content:'';
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar ul li a{
+    color:rgb(59, 59, 59);
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    background-color: transparent !important;
+}
+/* .navbar{
+    transition: all 0.5s;
+}
+.navbar-scrolled{
+    background-color: wheat;
+    box-shadow: 0px 3px 10px rgb(150, 134, 134);
+} */
+
+.navbar-toggle span{
+    border:1px solid;
+
+}
+/*------HOME-------*/
+.home{
+    text-align: center;
+    padding: 150px;
+    font-size: 80px;
+    color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+}
+.home .cont{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+@media (max-width:850px){
+    .home{background-position: 50%;}
+}
+@media (max-width:1100px){
+    .home .old{font-size: 25px;}
+    .home .cont{font-size: 25px;}
+    .home .new{font-size: 25px;}
+}
+.new{
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+}
+.country::after{
+    content: ' ';
+    color: whitesmoke;
+    text-shadow: 0px 1px 1px black;
+    animation: countryname 10s infinite linear;
+}
+
+@keyframes countryname{
+    0%{content: "INDIA";}
+    20%{content: "NEW ZEALAND";}
+    40%{content: "TURKEY";}
+    60%{content: "ITALY";}
+    80%{content: "SWITZERLAND";}
+    100%{content: "FRANCE";}
+}
+
+/*------------Book Now---------*/
+form{
+    padding-left: 180px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(59, 59, 59);
+  }
+  
+.book{
+    border-radius: 5px;
+    padding: 50px;
+  }
+.bookimg{
+    height: 46vw;
+    width: 120%;
+    border-radius: 10px;
+}
+.row p{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(59,59,59);
+    padding-bottom: 20px;
+    padding-left: 18px;
+
+}
+
+.carousel-inner .item{
+    float:left;
+  }
+
+/*--------destination--------*/
+.dest{
+    position:relative
+}
+.dest .slide-container .slide{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+.dest .slide-container .slide .dimg{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    animation:fadein .4s linear;
+}
+
+@keyframes fadein{
+    0%{
+        transform: scale(1.5);
+    }
+}
+
+.dest .slide-container .slide .content h3{
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+    text-shadow: 0px 5px 10px black;
+    animation: animate .4s linear .4s backwards;
+}
+
+.dest .slide-container .slide .content p{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-align: left;
+    padding: 0px;
+    text-shadow: 0px 5px 10px black;
+    animation: animate .4s linear .4s backwards;
+}
+@keyframes animate{
+    0%{
+        opacity:9;
+        transform: scale(.5) translateY(-50px);
+    }
+}
+
+.dest .slide-container{
+    display: none;
+}
+
+.dest .slide-container.active{
+    display: block;
+}
+
+.dest #next,
+.dest #prev{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    color: rgb(59, 59, 59);
+    font-weight: bold;
+    height: 80px;
+    width: 50px;
+    line-height: 55px;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+.dest #next{
+    padding-right: 0%;
+    right: 0px;
+}
+.dest #prev{
+    left:0;
+}
+
+
+/*----------SERVICES-----------*/
+.services h1{
+    color:rgb(59, 59, 59);
+    padding-left: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+.card{
+    border-radius: 5px;
+    /* border:2px solid rgb(58, 63, 58); */
+    box-shadow: rgba(0,0,0,0.1) 5px 8px 15px;
+}
+.cardimg{
+    height: 15vw;
+    width: 100%;
+}
+
+.services h3{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.services p{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*----------Footer-----------*/
+#footer{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+.social-links a{
+    padding: 28px;
+    border-radius: 5px;
+    color:rgb(59, 59, 59);
+    font-size: 20px;
+
+}
+.copyright{
+    font-size: 20px;
+}
